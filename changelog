@@ -1,0 +1,84 @@
+commit a54b546ba05eb219551529689cb44429b36b21b7
+Author: Frank.Y.Liao <frank.y.liao@newegg.com>
+Date:   Tue Dec 20 14:38:49 2016 +0800
+
+    modified Git.txt
+
+commit ee0dfae1020f068e810da8c710fe209b6ad40db5
+Author: Frank.Y.Liao <frank.y.liao@newegg.com>
+Date:   Tue Dec 20 10:27:34 2016 +0800
+
+    modified git.txt
+
+commit bd2814996257619be55bf4c77cf735c5a4e16fab
+Merge: 61d2a88 b5ac50d
+Author: Frank.Y.Liao <frank.y.liao@newegg.com>
+Date:   Mon Dec 19 16:57:00 2016 +0800
+
+    update test.txt from branch test1 and test2
+
+commit b5ac50daba00eca08a986fcf71121ca062330429
+Author: Frank.Y.Liao <frank.y.liao@newegg.com>
+Date:   Mon Dec 19 16:55:07 2016 +0800
+
+    try conflict
+
+commit 61d2a880236365b475b25ce77a295252fcc8d0c5
+Author: Frank.Y.Liao <frank.y.liao@newegg.com>
+Date:   Mon Dec 19 16:47:22 2016 +0800
+
+    test
+
+commit d13144a8055a9d7da630553c39c0330d5309dddf
+Author: Frank.Y.Liao <frank.y.liao@newegg.com>
+Date:   Mon Dec 19 16:20:41 2016 +0800
+
+    add Git.txt
+
+commit 902a1e88ec45626377954204b10f6e3a5469944a
+Merge: 494e90b ef44954
+Author: Frank.Y.Liao <frank.y.liao@newegg.com>
+Date:   Mon Dec 19 15:00:55 2016 +0800
+
+    Merge branch 'master' of https://github.com/lilant/test
+
+commit 494e90b23e8e6e578040aeff804301314c314618
+Author: Frank.Y.Liao <frank.y.liao@newegg.com>
+Date:   Mon Dec 19 14:58:57 2016 +0800
+
+    Add new files
+
+commit ef44954c9a0c617edc23dd122f58d9910bf71d64
+Merge: 1b5d81d 10506c9
+Author: lilant <lilantapp@gmail.com>
+Date:   Thu Dec 15 15:42:39 2016 +0800
+
+    Merge pull request #1 from lilant/testmod
+    
+    Update test.txt
+
+commit 10506c9ce1cf37fcf68262ccd3aea49c785efe17
+Author: lilant <lilantapp@gmail.com>
+Date:   Thu Dec 15 15:39:31 2016 +0800
+
+    Update test.txt
+    
+    remove github2 line 2
+
+commit 1b5d81d7dcc48f8f8ed4d0d7c26bff1e31cde5eb
+Author: Frank.Y.Liao <frank.y.liao@newegg.com>
+Date:   Thu Dec 15 15:16:00 2016 +0800
+
+    modified test.txt
+
+commit 4cb3d226d4c3d878be6f8eb3c1e6b068b6bd6687
+Author: Frank.Y.Liao <frank.y.liao@newegg.com>
+Date:   Thu Dec 15 11:46:39 2016 +0800
+
+    test github
+
+commit 5a9fc6b386407b9ee7b5a58a30becd24d6ff753f
+Author: lilant <lilantapp@gmail.com>
+Date:   Wed Dec 7 14:32:58 2016 +0800
+
+    Initial commit
