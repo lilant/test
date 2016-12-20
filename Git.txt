@@ -110,6 +110,9 @@ cat .git/refs/heads/master
 cat .git/refs/tags/foobar
 拿到 foobar tag 指向的commit
 
+15. Git 工具 - 儲藏 (Stashing)
+https://git-scm.com/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%84%B2%E8%97%8F-Stashing
+
 git clone
 C:\Users\fl51
 
