@@ -113,8 +113,13 @@ cat .git/refs/tags/foobar
 15. Git 工具 - 儲藏 (Stashing)
 https://git-scm.com/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%84%B2%E8%97%8F-Stashing
 
+16. Git 基礎 - 復原
+https://git-scm.com/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E5%BE%A9%E5%8E%9F
 git clone
 C:\Users\fl51
+
+17. git init 重複執行會？
+Running git init in an existing repository is safe. It will not overwrite things that are already there. The primary reason for rerunning git init is to pick up newly added templates (or to move the repository to another place if --separate-git-dir is given).
 
 三種狀態
 Git有三種表達檔案的狀態：已提交(committed)、已修改(modified)及已暫存(staged)。
