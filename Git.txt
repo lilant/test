@@ -69,6 +69,46 @@ Date:   Mon Dec 19 14:58:57 2016 +0800
 
 如果想要還原某個版本，但又想保留修改過的地方，可以把 –hard 拿掉。
 
+11. 要建立一個新的分支
+git branch 分支名稱
+要刪除某個分支
+git branch -d 分支名稱
+如果要切換不同的分支
+git checkout 分支名稱
+查看我現在有哪些分支
+git branch
+要合併某個分支
+git merge 要合併分支名稱:
+這邊要注意一下，假設我的法師分支，想要獲得戰士分支的技能
+a. 先切換到法師分支
+git checkout mage
+b. 把戰士分支合併過來
+git merge fighter
+遇到衝突的時候：
+
+12. 也可以把git add與git commit用一個指令完成
+
+    git commit -a -m "註解"
+
+13. 有關pull:
+如果今天tom的test repo有了新的變更，告訴billy，billy要將變更merge到自己的repo中，可以在本地端輸入
+
+    git pull git://github.com/tom/test.git
+
+pull這個指令其實涵蓋了fetch(將變更複製回來)以及merge。
+因此經過merge後，tom的變更就加入到billy的repo囉！
+
+14.
+Trace Git branch (demo)
+‧
+cat .git/HEAD
+拿到目前工作目錄current branch 是指向哪一個 branch
+‧
+cat .git/refs/heads/master
+拿到 master branch 指向的 commit
+‧
+cat .git/refs/tags/foobar
+拿到 foobar tag 指向的commit
 
 git clone
 C:\Users\fl51
@@ -93,6 +133,10 @@ git config --global alias.br branch
 
 分支圖
 git log --oneline --graph --color --all --decorate
+
+編輯器
+
+git config --global core.editor "'E://Portable Software/Sublime Text Build 3083 x64/subl.exe' -w"
 
 PPT:
 1. 分散式 vs. 集中式
