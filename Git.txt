@@ -149,3 +149,28 @@ git config --global core.editor "'E://Portable Software/Sublime Text Build 3083 
 PPT:
 1. 分散式 vs. 集中式
 2. Git
+
+Git 指令：
+
+    add（新增檔案）
+    branch（分支）
+    clone（複製）
+    commit（記錄倉庫的改變）
+    diff（比較不同）
+    fetch（切換）
+    grep（搜尋字串）
+    init（建立新的倉庫）
+    log（記錄）
+    merge（合併）
+    mv（修改檔名、搬移目錄）
+    pull（更新）
+    push（上傳）
+    remote（維護遠端檔案）
+    reset（重設）
+    revert（資料還原）
+    rm（刪除檔案）
+    show（顯示）
+    stash（暫存）
+    status（狀態）
+    tag（標籤）
+    -d（還原已被刪除的檔案）
