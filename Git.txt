@@ -32,6 +32,14 @@ git config --global user.name "Frank.Y.Liao"
 git config --global user.email "frank.y.liao@newegg.com"
 git config --global color.ui true !git 的顯示介面上色
 git config --global core.quotepath false# 設置顯示中文文件名
+git config --global core.autocrlf true
+git config --global core.safecrlf true
+
+縮寫
+git config --global alias.co checkout
+git config --global alias.cm commit
+git config --global alias.st status
+git config --global alias.br branch
 
 5. git status 主要在於列出目前資料夾內，檔案的狀況為何
 
@@ -121,6 +129,10 @@ C:\Users\fl51
 17. git init 重複執行會？
 Running git init in an existing repository is safe. It will not overwrite things that are already there. The primary reason for rerunning git init is to pick up newly added templates (or to move the repository to another place if --separate-git-dir is given).
 
+
+18. 建立遠端分支：
+https://blog.longwin.com.tw/2013/11/git-create-remote-branch-2013/
+
 三種狀態
 Git有三種表達檔案的狀態：已提交(committed)、已修改(modified)及已暫存(staged)。
  已提交意謂著資料己安全地存在讀者的本地端資料庫。
@@ -130,14 +142,6 @@ Git有三種表達檔案的狀態：已提交(committed)、已修改(modified)�
 查詢 Git 物件
 git cat-file -p HEAD
 
-git config --global core.autocrlf true
-git config --global core.safecrlf true
-
-縮寫
-git config --global alias.co checkout
-git config --global alias.cm commit
-git config --global alias.st status
-git config --global alias.br branch
 
 分支圖
 git log --oneline --graph --color --all --decorate
