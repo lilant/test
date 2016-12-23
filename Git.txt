@@ -1,11 +1,11 @@
-1. Is Git the Same Thing as Github!?
+﻿1. Is Git the Same Thing as Github!?
 https://jahya.net/blog/git-vs-github/
 
 2. Git達人教你搞懂GitHub基礎觀念
 了解集中式和分散式版本控管的差異
 http://www.ithome.com.tw/news/95283
 
-2. 用VS Code的Git功能
+3. 用VS Code的Git功能
 https://dotblogs.com.tw/lapland/2016/04/19/172848
 
 
