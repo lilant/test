@@ -1,17 +1,17 @@
-ï»¿1. Is Git the Same Thing as Github!?
+1. Is Git the Same Thing as Github!?
 https://jahya.net/blog/git-vs-github/
 
-2. Gité”äººæ•™ä½ ææ‡‚GitHubåŸºç¤è§€å¿µ
-äº†è§£é›†ä¸­å¼å’Œåˆ†æ•£å¼ç‰ˆæœ¬æ§ç®¡çš„å·®ç•°
+2. Git¹F¤H±Ğ§A·dÀ´GitHub°òÂ¦Æ[©À
+¤F¸Ñ¶°¤¤¦¡©M¤À´²¦¡ª©¥»±±ºŞªº®t²§
 http://www.ithome.com.tw/news/95283
 
-3. ç”¨VS Codeçš„GitåŠŸèƒ½
+3. ¥ÎVS CodeªºGit¥\¯à
 https://dotblogs.com.tw/lapland/2016/04/19/172848
 
 
 Note:
-1. åˆ‡æ›åˆ°æŸä¸€å€‹è³‡æ–™å¤¾åº•ä¸‹
-cd è³‡æ–™å¤¾è·¯å¾‘
+1. ¤Á´«¨ì¬Y¤@­Ó¸ê®Æ§¨©³¤U
+cd ¸ê®Æ§¨¸ô®|
 cd /Users/fl51/git
 !!!!!!!!!!!!!!!!!!!
 no: cd..
@@ -19,42 +19,42 @@ yes: cd ..
 !!!!!!!!!!!!!!!!!!!
 
 
-2. æŸ¥çœ‹ test è³‡æ–™å¤¾åº•ä¸‹æœ‰å“ªäº›è³‡æ–™
+2. ¬d¬İ test ¸ê®Æ§¨©³¤U¦³­ş¨Ç¸ê®Æ
 ls
-ls æŒ‡ä»¤åªæœƒå–®ç´”é¡¯ç¤ºå‡ºæª”æ¡ˆæˆ–è³‡æ–™å¤¾åç¨±ï¼Œè‹¥è¦æŸ¥çœ‹è©³ç´°è³‡æ–™ï¼Œå‰‡ä½¿ç”¨ï¼š
+ls «ü¥O¥u·|³æ¯ÂÅã¥Ü¥XÀÉ®×©Î¸ê®Æ§¨¦WºÙ¡A­Y­n¬d¬İ¸Ô²Ó¸ê®Æ¡A«h¨Ï¥Î¡G
 ls -al
 
-3. é¡¯ç¤ºç›®å‰è³‡æ–™å¤¾çš„è·¯å¾‘
+3. Åã¥Ü¥Ø«e¸ê®Æ§¨ªº¸ô®|
 pwd
 
 4.
 git config --global user.name "Frank.Y.Liao"
 git config --global user.email "frank.y.liao@newegg.com"
-git config --global color.ui true !git çš„é¡¯ç¤ºä»‹é¢ä¸Šè‰²
-git config --global core.quotepath false# è¨­ç½®é¡¯ç¤ºä¸­æ–‡æ–‡ä»¶å
+git config --global color.ui true !git ªºÅã¥Ü¤¶­±¤W¦â
+git config --global core.quotepath false# ³]¸mÅã¥Ü¤¤¤å¤å¥ó¦W
 git config --global core.autocrlf true/false
 git config --global core.safecrlf true
 
-ç¸®å¯«
+ÁY¼g
 git config --global alias.co checkout
 git config --global alias.cm commit
 git config --global alias.st status
 git config --global alias.br branch
 
-5. git status ä¸»è¦åœ¨æ–¼åˆ—å‡ºç›®å‰è³‡æ–™å¤¾å…§ï¼Œæª”æ¡ˆçš„ç‹€æ³ç‚ºä½•
+5. git status ¥D­n¦b©ó¦C¥X¥Ø«e¸ê®Æ§¨¤º¡AÀÉ®×ªºª¬ªp¬°¦ó
 
 6. git <verb> --help
 
-7. git add/rm æª”æ¡ˆåç¨±
-ä½¿ç”¨ git status æŸ¥åˆ°çš„æª”æ¡ˆåç¨±å¡«åˆ° git add å¾Œé¢ï¼Œå¦‚æœ git config â€“global color.ui true æœ‰è¨­å®šéäº†ï¼Œé‚£æª”æ¡ˆæ‡‰è©²æœƒæ˜¯ç´…è‰²å­—é«”é¡¯ç¤ºã€‚
-å°‡æª”æ¡ˆ git add éä¹‹å¾Œï¼Œåœ¨è¼¸å…¥ä¸€æ¬¡ git statusï¼Œæœ¬ä¾†æ˜¯ç´…è‰²çš„å­—é«”æ‡‰è©²å°±æœƒè®Šæˆç¶ è‰²çš„ï¼Œé‚£å°±ä»£è¡¨å®ƒå·²ç¶“åŠ åˆ°ã€Œé å‚™å„²å­˜ç‹€æ…‹ã€ã€‚
+7. git add/rm ÀÉ®×¦WºÙ
+¨Ï¥Î git status ¬d¨ìªºÀÉ®×¦WºÙ¶ñ¨ì git add «á­±¡A¦pªG git config ¡Vglobal color.ui true ¦³³]©w¹L¤F¡A¨ºÀÉ®×À³¸Ó·|¬O¬õ¦â¦rÅéÅã¥Ü¡C
+±NÀÉ®× git add ¹L¤§«á¡A¦b¿é¤J¤@¦¸ git status¡A¥»¨Ó¬O¬õ¦âªº¦rÅéÀ³¸Ó´N·|ÅÜ¦¨ºñ¦âªº¡A¨º´N¥Nªí¥¦¤w¸g¥[¨ì¡u¹w³ÆÀx¦sª¬ºA¡v¡C
 
-æ‰€è¬‚çš„ã€Œé å‚™å„²å­˜ç‹€æ…‹ã€ï¼Œå°±æ˜¯ä½ æœ¬æ¬¡æº–å‚™è¦å„²å­˜çš„æª”æ¡ˆæˆ–è³‡æ–™å¤¾ã€‚
-å› ç‚ºæœ‰å¯èƒ½ä½ é€™æ¬¡ç·¨è¼¯äº† 10 å€‹æª”æ¡ˆï¼Œä½†åªæƒ³è¦å„²å­˜å…¶ä¸­ 6 å€‹æª”æ¡ˆï¼Œé‚£ä½ å°±å¯ä»¥åª add é‚£ 6 å€‹æª”æ¡ˆã€‚
+©Ò¿×ªº¡u¹w³ÆÀx¦sª¬ºA¡v¡A´N¬O§A¥»¦¸·Ç³Æ­nÀx¦sªºÀÉ®×©Î¸ê®Æ§¨¡C
+¦]¬°¦³¥i¯à§A³o¦¸½s¿è¤F 10 ­ÓÀÉ®×¡A¦ı¥u·Q­nÀx¦s¨ä¤¤ 6 ­ÓÀÉ®×¡A¨º§A´N¥i¥H¥u add ¨º 6 ­ÓÀÉ®×¡C
 
-ä½ åœ¨å¯¦éš›æ‰‹å‹•åˆªé™¤æª”æ¡ˆå¾Œï¼Œåœ¨é‚„è¦å†è¼¸å…¥ä¸€æ¬¡é€™å€‹æŒ‡ä»¤ï¼Œæ‰èƒ½è®“ git çŸ¥é“ï¼Œé€™å€‹æª”æ¡ˆå·²ç¶“è¢«ä½ åˆªæ‰äº†ï¼Œä¸ç„¶å®ƒå¯æ˜¯æœƒä¸€ç›´è¿½è¹¤çš„å–”ã€‚
+§A¦b¹ê»Ú¤â°Ê§R°£ÀÉ®×«á¡A¦bÁÙ­n¦A¿é¤J¤@¦¸³o­Ó«ü¥O¡A¤~¯àÅı git ª¾¹D¡A³o­ÓÀÉ®×¤w¸g³Q§A§R±¼¤F¡A¤£µM¥¦¥i¬O·|¤@ª½°lÂÜªº³á¡C
 
-8. git commit -m "æœ¬æ¬¡æ›´æ–°çš„è¨»è§£"
+8. git commit -m "¥»¦¸§ó·sªºµù¸Ñ"
 
 9. git log
 commit 902a1e88ec45626377954204b10f6e3a5469944a
@@ -71,112 +71,112 @@ Date:   Mon Dec 19 14:58:57 2016 +0800
     Add new files
 
 
-10. git reset --hard ç´€éŒ„é»çš„è­˜åˆ¥ç¢¼
-é‚„åŸåˆ°ä½ æŒ‡å®šçš„ç´€éŒ„é»ã€‚
-æ‰€æœ‰åœ¨ç´€éŒ„é»ä¹‹å¾Œä¿®æ”¹éçš„åœ°æ–¹é€šé€šéƒ½æœƒä¸è¦‹ï¼æ‰€ä»¥åœ¨è¼¸å…¥é€™å€‹æŒ‡ä»¤ä¹‹å‰ï¼Œè«‹ç¢ºå®šçœŸçš„è¦æ”¾æ£„é‚£äº›ä¿®æ”¹å¾Œå†è¼¸å…¥å–”ï¼
+10. git reset --hard ¬ö¿ıÂIªºÃÑ§O½X
+ÁÙ­ì¨ì§A«ü©wªº¬ö¿ıÂI¡C
+©Ò¦³¦b¬ö¿ıÂI¤§«á­×§ï¹Lªº¦a¤è³q³q³£·|¤£¨£¡I©Ò¥H¦b¿é¤J³o­Ó«ü¥O¤§«e¡A½Ğ½T©w¯uªº­n©ñ±ó¨º¨Ç­×§ï«á¦A¿é¤J³á¡I
 
-å¦‚æœæƒ³è¦é‚„åŸæŸå€‹ç‰ˆæœ¬ï¼Œä½†åˆæƒ³ä¿ç•™ä¿®æ”¹éçš„åœ°æ–¹ï¼Œå¯ä»¥æŠŠ â€“hard æ‹¿æ‰ã€‚
+¦pªG·Q­nÁÙ­ì¬Y­Óª©¥»¡A¦ı¤S·Q«O¯d­×§ï¹Lªº¦a¤è¡A¥i¥H§â ¡Vhard ®³±¼¡C
 
-11. è¦å»ºç«‹ä¸€å€‹æ–°çš„åˆ†æ”¯
-git branch åˆ†æ”¯åç¨±
-è¦åˆªé™¤æŸå€‹åˆ†æ”¯
-git branch -d åˆ†æ”¯åç¨±
-å¦‚æœè¦åˆ‡æ›ä¸åŒçš„åˆ†æ”¯
-git checkout åˆ†æ”¯åç¨±
-æŸ¥çœ‹æˆ‘ç¾åœ¨æœ‰å“ªäº›åˆ†æ”¯
+11. ­n«Ø¥ß¤@­Ó·sªº¤À¤ä
+git branch ¤À¤ä¦WºÙ
+­n§R°£¬Y­Ó¤À¤ä
+git branch -d ¤À¤ä¦WºÙ
+¦pªG­n¤Á´«¤£¦Pªº¤À¤ä
+git checkout ¤À¤ä¦WºÙ
+¬d¬İ§Ú²{¦b¦³­ş¨Ç¤À¤ä
 git branch
-è¦åˆä½µæŸå€‹åˆ†æ”¯
-git merge è¦åˆä½µåˆ†æ”¯åç¨±:
-é€™é‚Šè¦æ³¨æ„ä¸€ä¸‹ï¼Œå‡è¨­æˆ‘çš„æ³•å¸«åˆ†æ”¯ï¼Œæƒ³è¦ç²å¾—æˆ°å£«åˆ†æ”¯çš„æŠ€èƒ½
-a. å…ˆåˆ‡æ›åˆ°æ³•å¸«åˆ†æ”¯
+­n¦X¨Ö¬Y­Ó¤À¤ä
+git merge ­n¦X¨Ö¤À¤ä¦WºÙ:
+³oÃä­nª`·N¤@¤U¡A°²³]§Úªºªk®v¤À¤ä¡A·Q­nÀò±o¾Ô¤h¤À¤äªº§Ş¯à
+a. ¥ı¤Á´«¨ìªk®v¤À¤ä
 git checkout mage
-b. æŠŠæˆ°å£«åˆ†æ”¯åˆä½µéä¾†
+b. §â¾Ô¤h¤À¤ä¦X¨Ö¹L¨Ó
 git merge fighter
-é‡åˆ°è¡çªçš„æ™‚å€™ï¼š
+¹J¨ì½Ä¬ğªº®É­Ô¡G
 
-12. ä¹Ÿå¯ä»¥æŠŠgit addèˆ‡git commitç”¨ä¸€å€‹æŒ‡ä»¤å®Œæˆ
+12. ¤]¥i¥H§âgit add»Pgit commit¥Î¤@­Ó«ü¥O§¹¦¨
 
-    git commit -a -m "è¨»è§£"
+    git commit -a -m "µù¸Ñ"
 
-13. æœ‰é—œpull:
-å¦‚æœä»Šå¤©tomçš„test repoæœ‰äº†æ–°çš„è®Šæ›´ï¼Œå‘Šè¨´billyï¼Œbillyè¦å°‡è®Šæ›´mergeåˆ°è‡ªå·±çš„repoä¸­ï¼Œå¯ä»¥åœ¨æœ¬åœ°ç«¯è¼¸å…¥
+13. ¦³Ãöpull:
+¦pªG¤µ¤Ñtomªºtest repo¦³¤F·sªºÅÜ§ó¡A§i¶Dbilly¡Abilly­n±NÅÜ§ómerge¨ì¦Û¤vªºrepo¤¤¡A¥i¥H¦b¥»¦aºİ¿é¤J
 
     git pull git://github.com/tom/test.git
 
-pullé€™å€‹æŒ‡ä»¤å…¶å¯¦æ¶µè“‹äº†fetch(å°‡è®Šæ›´è¤‡è£½å›ä¾†)ä»¥åŠmergeã€‚
-å› æ­¤ç¶“émergeå¾Œï¼Œtomçš„è®Šæ›´å°±åŠ å…¥åˆ°billyçš„repoå›‰ï¼
+pull³o­Ó«ü¥O¨ä¹ê²[»\¤Ffetch(±NÅÜ§ó½Æ»s¦^¨Ó)¥H¤Îmerge¡C
+¦]¦¹¸g¹Lmerge«á¡AtomªºÅÜ§ó´N¥[¤J¨ìbillyªºrepoÅo¡I
 
 14.
 Trace Git branch (demo)
-â€§
+¡E
 cat .git/HEAD
-æ‹¿åˆ°ç›®å‰å·¥ä½œç›®éŒ„current branch æ˜¯æŒ‡å‘å“ªä¸€å€‹ branch
-â€§
+®³¨ì¥Ø«e¤u§@¥Ø¿ıcurrent branch ¬O«ü¦V­ş¤@­Ó branch
+¡E
 cat .git/refs/heads/master
-æ‹¿åˆ° master branch æŒ‡å‘çš„ commit
-â€§
+®³¨ì master branch «ü¦Vªº commit
+¡E
 cat .git/refs/tags/foobar
-æ‹¿åˆ° foobar tag æŒ‡å‘çš„commit
+®³¨ì foobar tag «ü¦Vªºcommit
 
-15. Git å·¥å…· - å„²è— (Stashing)
+15. Git ¤u¨ã - ÀxÂÃ (Stashing)
 https://git-scm.com/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%84%B2%E8%97%8F-Stashing
 
-16. Git åŸºç¤ - å¾©åŸ
+16. Git °òÂ¦ - ´_­ì
 https://git-scm.com/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E5%BE%A9%E5%8E%9F
 git clone
 C:\Users\fl51
 
-17. git init é‡è¤‡åŸ·è¡Œæœƒï¼Ÿ
+17. git init ­«½Æ°õ¦æ·|¡H
 Running git init in an existing repository is safe. It will not overwrite things that are already there. The primary reason for rerunning git init is to pick up newly added templates (or to move the repository to another place if --separate-git-dir is given).
 
 
-18. å»ºç«‹é ç«¯åˆ†æ”¯ï¼š
+18. «Ø¥ß»·ºİ¤À¤ä¡G
 https://blog.longwin.com.tw/2013/11/git-create-remote-branch-2013/
 
-ä¸‰ç¨®ç‹€æ…‹
-Gitæœ‰ä¸‰ç¨®è¡¨é”æª”æ¡ˆçš„ç‹€æ…‹ï¼šå·²æäº¤(committed)ã€å·²ä¿®æ”¹(modified)åŠå·²æš«å­˜(staged)ã€‚
- å·²æäº¤æ„è¬‚è‘—è³‡æ–™å·±å®‰å…¨åœ°å­˜åœ¨è®€è€…çš„æœ¬åœ°ç«¯è³‡æ–™åº«ã€‚
- å·±ä¿®æ”¹ä»£è¡¨è‘—è®€è€…å·²ä¿®æ”¹æª”æ¡ˆä½†å°šæœªæäº¤åˆ°è³‡æ–™åº«ã€‚
- å·²æš«å­˜æ„è¬‚è‘—è®€è€…æ¨™è¨˜å·²ä¿®æ”¹æª”æ¡ˆç›®å‰çš„ç‰ˆæœ¬åˆ°ä¸‹ä¸€æ¬¡æä¾›çš„å¿«ç…§ã€‚
+¤TºØª¬ºA
+Git¦³¤TºØªí¹FÀÉ®×ªºª¬ºA¡G¤w´£¥æ(committed)¡B¤w­×§ï(modified)¤Î¤w¼È¦s(staged)¡C
+ ¤w´£¥æ·N¿×µÛ¸ê®Æ¤v¦w¥ş¦a¦s¦bÅªªÌªº¥»¦aºİ¸ê®Æ®w¡C
+ ¤v­×§ï¥NªíµÛÅªªÌ¤w­×§ïÀÉ®×¦ı©|¥¼´£¥æ¨ì¸ê®Æ®w¡C
+ ¤w¼È¦s·N¿×µÛÅªªÌ¼Ğ°O¤w­×§ïÀÉ®×¥Ø«eªºª©¥»¨ì¤U¤@¦¸´£¨Ñªº§Ö·Ó¡C
 
-æŸ¥è©¢ Git ç‰©ä»¶
+¬d¸ß Git ª«¥ó
 git cat-file -p HEAD
 
 http://fl51@git.newegg.org/scm/imtw/newkit-v1.0.5-src-modules.git
 
 
-åˆ†æ”¯åœ–
+¤À¤ä¹Ï
 git log --oneline --graph --color --all --decorate
 
-ç·¨è¼¯å™¨
+½s¿è¾¹
 
 git config --global core.editor "'E://Portable Software/Sublime Text Build 3083 x64/subl.exe' -w"
 
 PPT:
-1. åˆ†æ•£å¼ vs. é›†ä¸­å¼
+1. ¤À´²¦¡ vs. ¶°¤¤¦¡
 2. Git
 
-Git æŒ‡ä»¤ï¼š
+Git «ü¥O¡G
 
-    addï¼ˆæ–°å¢æª”æ¡ˆï¼‰
-    branchï¼ˆåˆ†æ”¯ï¼‰
-    cloneï¼ˆè¤‡è£½ï¼‰
-    commitï¼ˆè¨˜éŒ„å€‰åº«çš„æ”¹è®Šï¼‰
-    diffï¼ˆæ¯”è¼ƒä¸åŒï¼‰
-    fetchï¼ˆåˆ‡æ›ï¼‰
-    grepï¼ˆæœå°‹å­—ä¸²ï¼‰
-    initï¼ˆå»ºç«‹æ–°çš„å€‰åº«ï¼‰
-    logï¼ˆè¨˜éŒ„ï¼‰
-    mergeï¼ˆåˆä½µï¼‰
-    mvï¼ˆä¿®æ”¹æª”åã€æ¬ç§»ç›®éŒ„ï¼‰
-    pullï¼ˆæ›´æ–°ï¼‰
-    pushï¼ˆä¸Šå‚³ï¼‰
-    remoteï¼ˆç¶­è­·é ç«¯æª”æ¡ˆï¼‰
-    resetï¼ˆé‡è¨­ï¼‰
-    revertï¼ˆè³‡æ–™é‚„åŸï¼‰
-    rmï¼ˆåˆªé™¤æª”æ¡ˆï¼‰
-    showï¼ˆé¡¯ç¤ºï¼‰
-    stashï¼ˆæš«å­˜ï¼‰
-    statusï¼ˆç‹€æ…‹ï¼‰
-    tagï¼ˆæ¨™ç±¤ï¼‰
-    -dï¼ˆé‚„åŸå·²è¢«åˆªé™¤çš„æª”æ¡ˆï¼‰
+    add¡]·s¼WÀÉ®×¡^
+    branch¡]¤À¤ä¡^
+    clone¡]½Æ»s¡^
+    commit¡]°O¿ı­Ü®wªº§ïÅÜ¡^
+    diff¡]¤ñ¸û¤£¦P¡^
+    fetch¡]¤Á´«¡^
+    grep¡]·j´M¦r¦ê¡^
+    init¡]«Ø¥ß·sªº­Ü®w¡^
+    log¡]°O¿ı¡^
+    merge¡]¦X¨Ö¡^
+    mv¡]­×§ïÀÉ¦W¡B·h²¾¥Ø¿ı¡^
+    pull¡]§ó·s¡^
+    push¡]¤W¶Ç¡^
+    remote¡]ºûÅ@»·ºİÀÉ®×¡^
+    reset¡]­«³]¡^
+    revert¡]¸ê®ÆÁÙ­ì¡^
+    rm¡]§R°£ÀÉ®×¡^
+    show¡]Åã¥Ü¡^
+    stash¡]¼È¦s¡^
+    status¡]ª¬ºA¡^
+    tag¡]¼ĞÅÒ¡^
+    -d¡]ÁÙ­ì¤w³Q§R°£ªºÀÉ®×¡^
