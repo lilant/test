@@ -32,7 +32,7 @@ git config --global user.name "Frank.Y.Liao"
 git config --global user.email "frank.y.liao@newegg.com"
 git config --global color.ui true !git 的顯示介面上色
 git config --global core.quotepath false# 設置顯示中文文件名
-git config --global core.autocrlf true
+git config --global core.autocrlf true/false
 git config --global core.safecrlf true
 
 縮寫
@@ -141,6 +141,8 @@ Git有三種表達檔案的狀態：已提交(committed)、已修改(modified)�
 
 查詢 Git 物件
 git cat-file -p HEAD
+
+http://fl51@git.newegg.org/scm/imtw/newkit-v1.0.5-src-modules.git
 
 
 分支圖
