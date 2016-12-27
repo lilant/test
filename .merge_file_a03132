@@ -1,0 +1,181 @@
+﻿
+1. Is Git the Same Thing as Github!?
+https://jahya.net/blog/git-vs-github/
+
+2. Git達人教你搞懂GitHub基礎觀念
+了解集中式和分散式版本控管的差異
+http://www.ithome.com.tw/news/95283
+
+2. 用VS Code的Git功能
+https://dotblogs.com.tw/lapland/2016/04/19/172848
+
+
+Note:
+1. 切換到某一個資料夾底下
+cd 資料夾路徑
+cd /Users/fl51/git
+!!!!!!!!!!!!!!!!!!!
+no: cd..
+yes: cd ..
+!!!!!!!!!!!!!!!!!!!
+
+
+2. 查看 test 資料夾底下有哪些資料
+ls
+ls 指令只會單純顯示出檔案或資料夾名稱，若要查看詳細資料，則使用：
+ls -al
+
+3. 顯示目前資料夾的路徑
+pwd
+
+4.
+git config --global user.name "Frank.Y.Liao"
+git config --global user.email "frank.y.liao@newegg.com"
+git config --global color.ui true !git 的顯示介面上色
+git config --global core.quotepath false# 設置顯示中文文件名
+git config --global core.autocrlf true
+git config --global core.safecrlf true
+
+縮寫
+git config --global alias.co checkout
+git config --global alias.cm commit
+git config --global alias.st status
+git config --global alias.br branch
+
+5. git status 主要在於列出目前資料夾內，檔案的狀況為何
+
+6. git <verb> --help
+
+7. git add/rm 檔案名稱
+使用 git status 查到的檔案名稱填到 git add 後面，如果 git config –global color.ui true 有設定過了，那檔案應該會是紅色字體顯示。
+將檔案 git add 過之後，在輸入一次 git status，本來是紅色的字體應該就會變成綠色的，那就代表它已經加到「預備儲存狀態」。
+
+所謂的「預備儲存狀態」，就是你本次準備要儲存的檔案或資料夾。
+因為有可能你這次編輯了 10 個檔案，但只想要儲存其中 6 個檔案，那你就可以只 add 那 6 個檔案。
+
+你在實際手動刪除檔案後，在還要再輸入一次這個指令，才能讓 git 知道，這個檔案已經被你刪掉了，不然它可是會一直追蹤的喔。
+
+8. git commit -m "本次更新的註解"
+
+9. git log
+commit 902a1e88ec45626377954204b10f6e3a5469944a
+Merge: 494e90b ef44954
+Author: Frank.Y.Liao <frank.y.liao@newegg.com>
+Date:   Mon Dec 19 15:00:55 2016 +0800
+
+    Merge branch 'master' of https://github.com/lilant/test
+
+commit 494e90b23e8e6e578040aeff804301314c314618
+Author: Frank.Y.Liao <frank.y.liao@newegg.com>
+Date:   Mon Dec 19 14:58:57 2016 +0800
+
+    Add new files
+
+
+10. git reset --hard 紀錄點的識別碼
+還原到你指定的紀錄點。
+所有在紀錄點之後修改過的地方通通都會不見！所以在輸入這個指令之前，請確定真的要放棄那些修改後再輸入喔！
+
+如果想要還原某個版本，但又想保留修改過的地方，可以把 –hard 拿掉。
+
+11. 要建立一個新的分支
+git branch 分支名稱
+要刪除某個分支
+git branch -d 分支名稱
+如果要切換不同的分支
+git checkout 分支名稱
+查看我現在有哪些分支
+git branch
+要合併某個分支
+git merge 要合併分支名稱:
+這邊要注意一下，假設我的法師分支，想要獲得戰士分支的技能
+a. 先切換到法師分支
+git checkout mage
+b. 把戰士分支合併過來
+git merge fighter
+遇到衝突的時候：
+
+12. 也可以把git add與git commit用一個指令完成
+
+    git commit -a -m "註解"
+
+13. 有關pull:
+如果今天tom的test repo有了新的變更，告訴billy，billy要將變更merge到自己的repo中，可以在本地端輸入
+
+    git pull git://github.com/tom/test.git
+
+pull這個指令其實涵蓋了fetch(將變更複製回來)以及merge。
+因此經過merge後，tom的變更就加入到billy的repo囉！
+
+14.
+Trace Git branch (demo)
+‧
+cat .git/HEAD
+拿到目前工作目錄current branch 是指向哪一個 branch
+‧
+cat .git/refs/heads/master
+拿到 master branch 指向的 commit
+‧
+cat .git/refs/tags/foobar
+拿到 foobar tag 指向的commit
+
+15. Git 工具 - 儲藏 (Stashing)
+https://git-scm.com/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%84%B2%E8%97%8F-Stashing
+
+16. Git 基礎 - 復原
+https://git-scm.com/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E5%BE%A9%E5%8E%9F
+git clone
+C:\Users\fl51
+
+17. git init 重複執行會？
+Running git init in an existing repository is safe. It will not overwrite things that are already there. The primary reason for rerunning git init is to pick up newly added templates (or to move the repository to another place if --separate-git-dir is given).
+
+
+18. 建立遠端分支：
+https://blog.longwin.com.tw/2013/11/git-create-remote-branch-2013/
+
+三種狀態
+Git有三種表達檔案的狀態：已提交(committed)、已修改(modified)及已暫存(staged)。
+ 已提交意謂著資料己安全地存在讀者的本地端資料庫。
+ 己修改代表著讀者已修改檔案但尚未提交到資料庫。
+ 已暫存意謂著讀者標記已修改檔案目前的版本到下一次提供的快照。
+
+查詢 Git 物件
+git cat-file -p HEAD
+
+
+分支圖
+git log --oneline --graph --color --all --decorate
+
+編輯器
+
+git config --global core.editor "'E://Portable Software/Sublime Text Build 3083 x64/subl.exe' -w"
+
+PPT:
+1. 分散式 vs. 集中式
+2. Git
+
+Git 指令：
+
+    add（新增檔案）
+    branch（分支）
+    clone（複製）
+    commit（記錄倉庫的改變）
+    diff（比較不同）
+    fetch（切換）
+    grep（搜尋字串）
+    init（建立新的倉庫）
+    log（記錄）
+    merge（合併）
+    mv（修改檔名、搬移目錄）
+    pull（更新）
+    push（上傳）
+    remote（維護遠端檔案）
+    reset（重設）
+    revert（資料還原）
+    rm（刪除檔案）
+    show（顯示）
+    stash（暫存）
+    status（狀態）
+    tag（標籤）
+    -d（還原已被刪除的檔案）
