@@ -132,6 +132,9 @@ Running git init in an existing repository is safe. It will not overwrite things
 18. 建立遠端分支：
 https://blog.longwin.com.tw/2013/11/git-create-remote-branch-2013/
 
+19. 如何將檔案從stage移除?
+http://oomusou.io/git/git-remove-stage/
+
 三種狀態
 Git有三種表達檔案的狀態：已提交(committed)、已修改(modified)及已暫存(staged)。
  已提交意謂著資料己安全地存在讀者的本地端資料庫。
