@@ -139,6 +139,12 @@ http://oomusou.io/git/git-remove-stage/
 20. Git rebase + stash 小技巧
 https://blog.wu-boy.com/2013/08/git-rebase-stash-tip/
 
+21. Pull request:
+很簡單，pull request就是請求別人pull你的repo。
+
+22.
+
+
 三種狀態
 Git有三種表達檔案的狀態：已提交(committed)、已修改(modified)及已暫存(staged)。
  已提交意謂著資料己安全地存在讀者的本地端資料庫。
