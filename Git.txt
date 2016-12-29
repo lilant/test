@@ -55,6 +55,18 @@ git config --global alias.br branch
 
 8. git commit -m "本次更新的註解"
 
+若一次修改大量檔案，可以將所有檔案修改都add進去stage
+
+    git add .
+
+之後commit提交一次的修改
+
+    git commit -m "註解"
+
+另外也可以把git add與git commit用一個指令完成
+
+    git commit -a -m "註解"
+
 9. git log
 commit 902a1e88ec45626377954204b10f6e3a5469944a
 Merge: 494e90b ef44954
@@ -140,9 +152,14 @@ http://oomusou.io/git/git-remove-stage/
 https://blog.wu-boy.com/2013/08/git-rebase-stash-tip/
 
 21. Pull request:
+https://www.zhihu.com/question/21682976
 很簡單，pull request就是請求別人pull你的repo。
+我改了你們的代碼，你們拉回去看看吧
 
 22.
+git diff 是比較 working tree 跟 staging area
+git diff --cached 是比較 staging area 跟本來的 repo.
+git diff HEAD 是比較 working tree 跟本來的 repo.
 
 
 三種狀態
