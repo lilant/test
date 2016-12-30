@@ -9,6 +9,18 @@ http://www.ithome.com.tw/news/95283
 https://dotblogs.com.tw/lapland/2016/04/19/172848
 
 
+Working tree 是你當下的工作目錄，就像 SVN checkout 出來的工作目錄。這裡要特別學習的新概念是 Staging area，這是 Git 獨有的功能。它是一塊暫存的 cached 區域，用來紀錄什麼是你待會要 commit 檔案。
+
+通常我們從遠端Repo拿東西下來，可以用Clone、Pull、Fetch等方法，其差異 (就我的理解) 說明如下：
+
+Clone: 會把遠端的repo整個專案抓下來，放在目前路徑下的新目錄中。(所以不需要先把新目錄建立成Repo，就可以整包抓下來，隨包附上.git目錄)
+
+Pull: 會把遠端的repo整個專案抓下來，跟你目前所在的Repo及所用的Branch作合併(Merge)，此指令等同Fetch+Merge。
+
+Fetch: 會把遠端的repo整個專案抓下來，但不跟你目前所用的branch合併，而是放在本地中的另一個Branch(remoteBranch)。
+
+<<<<<<<  跟 >>>>>>> 標記描述了產生衝突的程式碼，其間以=======作為區隔，第一個部份就是你新加的內容，第二個是遠端的內容
+
 Note:
 1. 切換到某一個資料夾底下
 cd 資料夾路徑

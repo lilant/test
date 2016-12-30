@@ -1,6 +1,6 @@
 http://git.newegg.org/projects/IMTW/repos/modules/browse
 
-1. 
+1.
 在開發的目錄下
 E:\newkit-v1.0.5\src\modules
 按右鍵
@@ -8,13 +8,20 @@ E:\newkit-v1.0.5\src\modules
 
 
 2. 先設定使用者名稱和電子郵件
-git config --global user.name "Kyle.W.Huang"
-git config --global user.email "Kyle.W.Huang@newegg.com"
-git clone http://fl51@git.newegg.org/scm/imtw/modules.git
+git config --global user.name "Jeff.C.Lai"
+git config --global user.email "Jeff.C.Lai@newegg.com"
+git clone http://jl0u@git.newegg.org/scm/imtw/modules.git
+cd modules
 git flow init -d
 
 3. 打開vscode
 File→Open Folder→modules
+
+
+4. 儲存當前進度
+working directory
+staging area
+repository(local)
 
 
 
