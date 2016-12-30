@@ -8,8 +8,10 @@ http://www.ithome.com.tw/news/95283
 3. 用VS Code的Git功能
 https://dotblogs.com.tw/lapland/2016/04/19/172848
 
-
-Working tree 是你當下的工作目錄，就像 SVN checkout 出來的工作目錄。這裡要特別學習的新概念是 Staging area，這是 Git 獨有的功能。它是一塊暫存的 cached 區域，用來紀錄什麼是你待會要 commit 檔案。
+a. working directory
+b. staging area
+c. .git directory(repository)
+Working directory 是你當下的工作目錄，就像 SVN checkout 出來的工作目錄。這裡要特別學習的新概念是 Staging area，這是 Git 獨有的功能。它是一塊暫存的 cached 區域，用來紀錄什麼是你待會要 commit 檔案。
 
 通常我們從遠端Repo拿東西下來，可以用Clone、Pull、Fetch等方法，其差異 (就我的理解) 說明如下：
 
@@ -44,6 +46,15 @@ git config --global user.email "frank.y.liao@newegg.com"
 git config --global color.ui true !git 的顯示介面上色
 git config --global core.quotepath false# 設置顯示中文文件名
 git config --global core.autocrlf true/false
+在提交檔案時，出現了一句fatal: LF would be replaced by CRLF
+經Google大神查詢後給予的答案，這是由於Unix(Linux)和Windows對換行(斷行)符號的表達不同
+在Windows底下，換行是以CRLF結尾，而Unix(Linux)底下，使用VIM編輯器新建立的檔案是以LF結尾
+因此在提交時會警告：fatal: LF would be replaced by CRLF(LF會被CRLF被替換)
+解決方法：
+尋找到.git目錄，接著,修改config文件，在[core]項目加上一句「autocrlf = false」即可順利提交
+
+autocrlf = false
+
 git config --global core.safecrlf true
 
 縮寫
