@@ -8,6 +8,20 @@ http://www.ithome.com.tw/news/95283
 3. 用VS Code的Git功能
 https://dotblogs.com.tw/lapland/2016/04/19/172848
 
+a. working directory
+b. staging area
+c. .git directory(repository)
+Working directory 是你當下的工作目錄，就像 SVN checkout 出來的工作目錄。這裡要特別學習的新概念是 Staging area，這是 Git 獨有的功能。它是一塊暫存的 cached 區域，用來紀錄什麼是你待會要 commit 檔案。
+
+通常我們從遠端Repo拿東西下來，可以用Clone、Pull、Fetch等方法，其差異 (就我的理解) 說明如下：
+
+Clone: 會把遠端的repo整個專案抓下來，放在目前路徑下的新目錄中。(所以不需要先把新目錄建立成Repo，就可以整包抓下來，隨包附上.git目錄)
+
+Pull: 會把遠端的repo整個專案抓下來，跟你目前所在的Repo及所用的Branch作合併(Merge)，此指令等同Fetch+Merge。
+
+Fetch: 會把遠端的repo整個專案抓下來，但不跟你目前所用的branch合併，而是放在本地中的另一個Branch(remoteBranch)。
+
+<<<<<<<  跟 >>>>>>> 標記描述了產生衝突的程式碼，其間以=======作為區隔，第一個部份就是你新加的內容，第二個是遠端的內容
 
 Note:
 1. 切換到某一個資料夾底下
@@ -33,6 +47,15 @@ git config --global user.email "frank.y.liao@newegg.com"
 git config --global color.ui true !git 的顯示介面上色
 git config --global core.quotepath false# 設置顯示中文文件名
 git config --global core.autocrlf true/false
+在提交檔案時，出現了一句fatal: LF would be replaced by CRLF
+經Google大神查詢後給予的答案，這是由於Unix(Linux)和Windows對換行(斷行)符號的表達不同
+在Windows底下，換行是以CRLF結尾，而Unix(Linux)底下，使用VIM編輯器新建立的檔案是以LF結尾
+因此在提交時會警告：fatal: LF would be replaced by CRLF(LF會被CRLF被替換)
+解決方法：
+尋找到.git目錄，接著,修改config文件，在[core]項目加上一句「autocrlf = false」即可順利提交
+
+autocrlf = false
+
 git config --global core.safecrlf true
 
 縮寫
@@ -55,6 +78,18 @@ git config --global alias.br branch
 你在實際手動刪除檔案後，在還要再輸入一次這個指令，才能讓 git 知道，這個檔案已經被你刪掉了，不然它可是會一直追蹤的喔。
 
 8. git commit -m "本次更新的註解"
+
+若一次修改大量檔案，可以將所有檔案修改都add進去stage
+
+    git add .
+
+之後commit提交一次的修改
+
+    git commit -m "註解"
+
+另外也可以把git add與git commit用一個指令完成
+
+    git commit -a -m "註解"
 
 9. git log
 commit 902a1e88ec45626377954204b10f6e3a5469944a
@@ -133,6 +168,24 @@ Running git init in an existing repository is safe. It will not overwrite things
 18. 建立遠端分支：
 https://blog.longwin.com.tw/2013/11/git-create-remote-branch-2013/
 
+19. 如何將檔案從stage移除?
+http://oomusou.io/git/git-remove-stage/
+
+
+20. Git rebase + stash 小技巧
+https://blog.wu-boy.com/2013/08/git-rebase-stash-tip/
+
+21. Pull request:
+https://www.zhihu.com/question/21682976
+很簡單，pull request就是請求別人pull你的repo。
+我改了你們的代碼，你們拉回去看看吧
+
+22.
+git diff 是比較 working tree 跟 staging area
+git diff --cached 是比較 staging area 跟本來的 repo.
+git diff HEAD 是比較 working tree 跟本來的 repo.
+
+
 三種狀態
 Git有三種表達檔案的狀態：已提交(committed)、已修改(modified)及已暫存(staged)。
  已提交意謂著資料己安全地存在讀者的本地端資料庫。
@@ -180,3 +233,12 @@ Git 指令：
     status（狀態）
     tag（標籤）
     -d（還原已被刪除的檔案）
+
+
+Git Bash 中 vim 編輯器簡單指令:
+
+i   進入編輯模式(自由打字啦)
+Esc 退出編輯模式(回到一般模式)
+dd  刪除一行(一般模式下)
+:wq 存檔離開(一般模式下)
+:q! 不存檔直接離開 (一般模式下)
