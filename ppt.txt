@@ -1,1 +1,17 @@
-all skills got!
+p. 1 cover, title
+
+p. 2 what is git
+a. local: 如何協作？
+b. 中心：subversion
+server會掛，開發有些亂
+c. 分散：更亂？branch解決
+
+p. 3 git誕生→ Linux Kernel
+
+p. 4 Git Basics
+不是記檔案的差異，而是檔案的快照
+
+p. 5 Git 的檔案處理
+working directory
+staging area
+git directory(repository)
