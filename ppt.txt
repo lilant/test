@@ -6,7 +6,7 @@ b. 中心：subversion
 server會掛，開發有些亂
 c. 分散：更亂？branch解決
 
-p. 3 git誕生→ Linux Kernel
+p. 3 先擁有 Git 基礎觀念，透過下指令的方式學習是最快的方式，不要跳過這一段
 
 p. 4 Git Basics
 不是記檔案的差異，而是檔案的快照
