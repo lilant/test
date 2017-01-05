@@ -191,8 +191,7 @@ git diff HEAD 是比較 working tree 跟本來的 repo.
 https://blog.wu-boy.com/2015/04/git-flow-and-javascript-coding-style/
 
 
-
-
+24.
 git clone is basically a combination of:
 
     git init (create the local repository)
@@ -201,6 +200,8 @@ git clone is basically a combination of:
     git checkout (create all the files of the main branch in your working tree)
 
 Therefore, no, you don't have to do a git init, because it is already done by git clone.
+
+25. git add --patch
 
 三種狀態
 Git有三種表達檔案的狀態：已提交(committed)、已修改(modified)及已暫存(staged)。
