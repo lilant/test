@@ -1,3 +1,6 @@
+https://confluence.atlassian.com/display/STASH026/Git+resources
+http://git.newegg.org/projects/IMTW
+
 1. Is Git the Same Thing as Github!?
 https://jahya.net/blog/git-vs-github/
 
@@ -185,6 +188,21 @@ git diff 是比較 working tree 跟 staging area
 git diff --cached 是比較 staging area 跟本來的 repo.
 git diff HEAD 是比較 working tree 跟本來的 repo.
 
+23. Git rebase vs. merge
+https://blog.wu-boy.com/2015/04/git-flow-and-javascript-coding-style/
+
+
+24.
+git clone is basically a combination of:
+
+    git init (create the local repository)
+    git remote add (add the URL to that repository)
+    git fetch (fetch all branches from that URL to your local repository)
+    git checkout (create all the files of the main branch in your working tree)
+
+Therefore, no, you don't have to do a git init, because it is already done by git clone.
+
+25. git add --patch
 
 三種狀態
 Git有三種表達檔案的狀態：已提交(committed)、已修改(modified)及已暫存(staged)。
