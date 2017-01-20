@@ -23,7 +23,7 @@ working directory
 staging area
 repository(local)
 
-test stash
+test stash 1
 
 
 
