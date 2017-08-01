@@ -1,0 +1,36 @@
+http://www.slideshare.net/pokaichang72/git-42427674
+
+p. 1 cover, title
+
+
+p. 2 what is git
+a. local: 如何協作？
+b. 中心：subversion
+server會掛，開發有些亂
+c. 分散：更亂？branch解決
+
+
+p. 3 先擁有 Git 基礎觀念，透過下指令的方式學習是最快的方式，不要跳過這一段
+
+
+p. 4 Git Basics
+不是記檔案的差異，而是檔案的快照
+
+
+p. 5 Git 的檔案處理
+working directory
+staging area
+git directory(repository)
+
+p. 6 建立repository
+要建立儲存庫，事實上，你有很多選擇，例如：
+
+    在本機建立本地的儲存庫 (local repository)
+    在本機建立一個共用的儲存庫 (shared repository)
+    在 GitHub 或其他 Git 平台建立遠端的儲存庫 (remote repository)
+
+無論如何，你總是需要一個儲存庫
+
+
+
+https://github.com/doggy8088/Learn-Git-in-30-days/blob/master/zh-tw/01.md
